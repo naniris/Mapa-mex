@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
+  </head>
+
+  <body background="fondo.jpg">
 
   <script src="http://d3js.org/d3.v3.min.js"></script>
-	<script src="http://d3js.org/topojson.v1.min.js"></script>
-	<script src="http://rawgithub.com/markmarkoh/datamaps/master/dist/datamaps.none.min.js"></script>
-
-  </head>
-  <body background="fondo.jpg">
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="http://rawgithub.com/markmarkoh/datamaps/master/dist/datamaps.none.min.js"></script>
 
    <section class="navBar">
       <div class="row mx-auto" class="navBar" >
@@ -56,18 +56,27 @@
   
 </section>
 
+<section>
+
+  <div class="row justify-content-center mt-3">
+    <div>
+      <h2 class="mx-0 text-center" style="color:white">ORGANIZACIONES ASTRONÓMICAS DE MÉXICO</h2>
+    </div>
+  </div>
+
+</section>
 
     <div class="container">
       <div class="row justify-content-start">
           
-        <div class="col-md-5 mapa">
+        <div class="col-md-3 mapa">
             <div id="mexico" style="height: 500px; width: 900px; opacity: 0.7;">
       
             </div>
         </div>
-        <div class="col-md-7">
-          <h1 style="color:white;">ORGANIZACIONES ASTRONÓMICAS DE MÉXICO</h1>
-        </div>
+        <!-- <div class="col-md-7">
+          <h3 style="color:white;">ORGANIZACIONES ASTRONÓMICAS DE MÉXICO</h3>
+        </div> -->
       </div>
     </div>
 
@@ -144,23 +153,6 @@
 			}
 	    });
 	</script>
-
-
-   <script type="text/javascript">
-
-    $( "div[id=mexico]").hover(
-      function() {
-        $( this ).append( $(""));
-      }, function() {
-        $( this ).find( "span:last" ).remove();
-      }
-    );
-     
-    $( "li.fade" ).hover(function() {
-      $( this ).fadeOut( 100 );
-      $( this ).fadeIn( 500 );
-    }); 
-  </script>
 
   </body>
 </html>

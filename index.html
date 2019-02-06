@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Federación Astronómica Mexicana</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+	<script src="http://rawgithub.com/markmarkoh/datamaps/master/dist/datamaps.none.min.js"></script>
+
+  </head>
+  <body background="fondo.jpg">
+
+   <section class="navBar">
+      <div class="row mx-auto" class="navBar" >
+          <div class="col-md-10 justify-content-center mr-0 col-5 text-center  ">
+          <h4 >FEDERACIÓN ASTRONÓMICA MEXICANA</h4>
+          </div>
+           <div class="col-md-2 col-8 text-right tamanoIconos">
+                <span><i><i class="fab fa-facebook-f mr-2"></i></i></span>
+          <span><i></i><i class="fab fa-instagram mr-2"></i></span>
+          <span><i><i class="far fa-envelope mr-2"></i></i></span>
+           </div>
+      </div>
+</section>
+  
+<section>
+  
+  <nav class="navbar navbar-expand-lg" style="color: white;">
+  <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item"><a class="nav-link colorText" href="example-usa.html">SOMOS</a></li>
+      <li class="nav-item"><a class="nav-link colorText" href="example-custom.html">EVENTOS ASTRONÓMICOS</a></li>
+      <li class="nav-item"><a class="nav-link colorText" href="example-usa.html">AGENDA</a></li>
+      <li class="nav-item"><a class="nav-link colorText" href="example-custom.html">GALERIA</a></li>
+      <a class="navbar-brand" style="opacity: 0.3;
+  filter: alpha(opacity=50); /* For IE8 and earlier */" href="#"><img src="MAPA (1)-4.jpg" alt="" width="100"></a>
+    </ul>
+     <form class="form-inline my-2 my-lg-0">
+      <a class="mr-sm-2 colorText" href="example-custom.html">CONTACTO</a>
+    </form>
+  </div>
+</nav>
+
+  
+</section>
+
+
+    <div class="container">
+      <div class="row justify-content-start">
+          
+        <div class="col-md-5 mapa">
+            <div id="mexico" style="height: 500px; width: 900px; opacity: 0.7;">
+      
+            </div>
+        </div>
+        <div class="col-md-7">
+          <h1 style="color:white;">ORGANIZACIONES ASTRONÓMICAS DE MÉXICO</h1>
+        </div>
+      </div>
+    </div>
+
+   
+
+    <div class="modal fade" id="mexico" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="justify-content-center modal-title" id="exampleModalLabel">MICHOACÁN</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body" id="mexico">
+            <h6>PLANETARIPO LIC. FELIPE RIVERA</h6>
+            <h6>CALZADA VENTURA PUENTE 0000 MORELIA</h6>
+            <h6>443 333 333 3333</h6>
+            <h6>Atención Lunes 9 a 2</h6>
+            <h6>WWW.PLANETARIO.COM</h6>
+            -----------------------------------------------
+            <h6>PLANETARIPO LIC. FELIPE RIVERA</h6>
+            <h6>CALZADA VENTURA PUENTE 0000 MORELIA</h6>
+            <h6>443 333 333 3333</h6>
+            <h6>Atención Lunes 9 a 2</h6>
+            <h6>WWW.PLANETARIO.COM</h6>
+            -----------------------------------------------
+            <h6>PLANETARIPO LIC. FELIPE RIVERA</h6>
+            <h6>CALZADA VENTURA PUENTE 0000 MORELIA</h6>
+            <h6>443 333 333 3333</h6>
+            <h6>Atención Lunes 9 a 2</h6>
+            <h6>WWW.PLANETARIO.COM</h6>
+            -----------------------------------------------
+        <h6>PLANETARIPO LIC. FELIPE RIVERA</h6>
+            <h6>CALZADA VENTURA PUENTE 0000 MORELIA</h6>
+            <h6>443 333 333 3333</h6>
+            <h6>Atención Lunes 9 a 2</h6>
+            <h6>WWW.PLANETARIO.COM</h6>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-info" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Cerrar</button> -->
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script>
+	    var map = new Datamap({
+	        element: document.getElementById('mexico'),
+	        geographyConfig: {
+				dataUrl: 'http://rawgit.com/josketres/topomex/master/dist/mx_states.topo.json'
+			},
+			scope: 'states',
+			fills: {
+			 defaultFill: 'transparent'
+			 // someKey: 'skyblue'
+			},
+			data : {
+				'Michoacán de Ocampo' : { fillKey:'someKey'}
+			},
+			setProjection: function(element) {
+				console.log(element.offsetWidth);
+				var projection = d3.geo.mercator()
+				.center([-100, 24])
+				.scale(1300)
+				.translate([element.offsetWidth / 2, element.offsetHeight / 2]);
+				 
+				var path = d3.geo.path().projection(projection);
+				return {path: path, projection: projection};
+			}
+	    });
+	</script>
+
+
+   <script type="text/javascript">
+
+    $( "div[id=mexico]").hover(
+      function() {
+        $( this ).append( $(""));
+      }, function() {
+        $( this ).find( "span:last" ).remove();
+      }
+    );
+     
+    $( "li.fade" ).hover(function() {
+      $( this ).fadeOut( 100 );
+      $( this ).fadeIn( 500 );
+    }); 
+  </script>
+
+  </body>
+</html>
